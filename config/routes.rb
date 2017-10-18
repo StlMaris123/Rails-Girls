@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'store/index'
+
+  resources :products
   root 'feeds#index'
   resources :feeds do
     member do
